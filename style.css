@@ -2,7 +2,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  background: linear-gradient(to right, #034C36, #BDCCCF);
+  background: linear-gradient(to right, #BDCCCF, #034C36, #003332);
   color: #003332; /* deep teal text for readability */
 }
 
@@ -16,6 +16,7 @@ body {
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
+  flex-wrap: wrap; /* ✅ allows wrapping on smaller screens */
 }
 
 .navbar .logo {
@@ -28,6 +29,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; /* ✅ responsive wrapping */
 }
 
 .navbar a {
@@ -44,6 +46,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
+  flex-shrink: 0; /* ✅ keeps button size consistent */
 }
 
 .btn:hover {
@@ -57,6 +60,11 @@ body {
   justify-content: space-around;
   padding: 80px 50px;
   color: #fff;
+  flex-wrap: wrap; /* ✅ responsive stacking */
+}
+
+.hero-text {
+  max-width: 500px; /* ✅ keeps text aligned with button */
 }
 
 .hero-text h1 {
@@ -71,17 +79,28 @@ body {
   color: #BDCCCF;
 }
 
-.highlight {
-  background: rgba(189, 204, 207, 0.2); /* soft sage mist overlay */
-  padding: 15px;
-  border-left: 5px solid #034C36; /* forest green accent */
-  border-radius: 5px;
-  font-size: 1.1em;
-  font-style: italic;
-  color: #fff;
-  max-width: 600px;
+/* Career Objective + Button Row */
+.objective-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* ✅ wraps on small screens */
+  max-width: 500px; /* ✅ contained width */
+  margin: 20px 0;
 }
 
+.highlight {
+  background: rgba(189, 204, 207, 0.2); /* soft sage mist overlay */
+  padding: 15px 20px;
+  border-left: 5px solid #034C36; /* forest green accent */
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-style: italic;
+  color: #fff;
+  flex: 1; /* ✅ text takes available space */
+}
+
+/* Hero Image */
 .hero-image img {
   width: 250px;
   border-radius: 50%;
@@ -90,4 +109,53 @@ body {
 }
 
 /* Sections */
-section
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #034C36; /* forest green underline */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #034C36;
+}
+
+ul li {
+  margin: 5px 0;
+  padding: 8px;
+  background: #BDCCCF; /* sage mist list items */
+  border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* ✅ stack text and image */
+    text-align: center;
+  }
+  .hero-text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .hero-image img {
+    max-width: 150px;
+  }
+}
