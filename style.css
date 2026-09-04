@@ -1,75 +1,47 @@
-body{
-    background-size: cover;
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-#panel panel-default{
-	text-align: center;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.bg-dark{
-	background-color: rgb(19,55,72);
-}
-.h1{
-	font-family: "cursive" sans-serif;
-}
-.navbar-brand h1{
-	color:white;
-	text-shadow: 1px 1px 1px black;
 
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 
+h1 {
+  margin: 10px 0;
+  color: #2c3e50;
 }
-.nav-item:hover{
-    border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255);
-}
-.navbar-brand :hover{
-    color: rgb(255, 136, 0);
-}
-#bg-light {
-    background-color:red;
-}
-.navbar-dark .navbar-nav .nav-link {
-    color: rgb(255 255 255);
-}
-.jumbotron .col-lg-12 .text-center {
-	 border-radius: 0 30px 0 30px; 
-	 padding: 10px;">
-}
-.about-profile h1{
-	color: white;
-	font-size: 30px;
-	font-family:"Garamond", serif;
 
+h2 {
+  color: #34495e;
+  margin-top: 20px;
 }
-.about-profile h3{
-	color: rgba(251, 191, 11, 1);
-	font-size: 20;
-	font-family:"Monaco", monospace;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-.about-profile p{
-	color: white;
-	font-style: italic;
-	
-}
-.My-skills h1{
-	font-size: 55px;
-	
-	
-}
-.col-lg-4 h2{
-	color: white;
-}
-.navbar-nav a:hover {
-	left: 0px;
-	transform:translateY(5px);
-}
-.fa-skype{
-	background: #00aff0;
-	color: white;
-}
-.p2-container{
- text-align: center ;
+
+ul li {
+  background: #ecf0f1;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
 }
