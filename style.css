@@ -1,10 +1,110 @@
+/* Gradient Background */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb, #d4a1f9);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  background: #4a90e2;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #6c5ce7;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 50px;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
 .highlight {
   background: rgba(255,255,255,0.2);
   padding: 15px;
-  border-left: 5px solid #4a90e2; /* blue accent */
+  border-left: 5px solid #4a90e2;
   border-radius: 5px;
   font-size: 1.1em;
   font-style: italic;
   color: #fff;
   max-width: 600px;
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+ul li {
+  margin: 5px 0;
+  padding: 8px;
 }
