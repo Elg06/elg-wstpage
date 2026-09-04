@@ -3,65 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esmael L. Gamilong - Resume</title>
+  <title>Esmael L. Gamilong - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">EG</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn">Hire Me</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <h2>👋 Hello, I am</h2>
       <h1>Esmael L. Gamilong</h1>
-      <p>Iloilo City | 0935-252-4247 | esmaelgamilong06@gmail.com</p>
-    </header>
+      <h3>IT Professional | Customer Care | Data Entry</h3>
+      <!-- Career Objective Highlight -->
+      <p class="highlight">
+        Performance-driven professional with three years of experience, committed to delivering measurable results by leveraging adaptability and problem-solving expertise in roles that value efficiency and results.
+      </p>
+      <a href="#objective" class="btn">Read More</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Photo">
+    </div>
+  </header>
 
-    <!-- Career Objective Highlight -->
-    <section class="highlight">
-      <h2>Career Objective</h2>
-      <p><strong>Performance-driven professional with three years of experience, committed to delivering measurable results by leveraging adaptability and problem-solving expertise in roles that value efficiency and results.</strong></p>
-      <p>Equipped with a four-year academic background in Information Technology and skills in data entry, administrative work, digital literacy, and accuracy. Aiming to continue developing expertise in customer relations and problem-solving while delivering measurable impact to the organization.</p>
-    </section>
+  <!-- Career Objective Section -->
+  <section id="objective">
+    <h2>Career Objective</h2>
+    <p>
+      Performance-driven professional with three years of experience, committed to delivering measurable results by leveraging adaptability and problem-solving expertise in roles that value efficiency and results. Equipped with a four-year academic background in Information Technology and skills in data entry, administrative work, digital literacy, and accuracy. Aiming to continue developing expertise in customer relations and problem-solving while delivering measurable impact to the organization.
+    </p>
+  </section>
 
-    <section>
-      <h2>Experience</h2>
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Experience</h2>
+    <div class="job">
       <h3>Customer Care Representative</h3>
       <p><strong>Carelon Global Solutions, Iloilo City</strong> | 2023–2026</p>
       <ul>
-        <li>Performed insurance verification, discussed payment status, and supported claims processing to ensure accurate and efficient billing.</li>
-        <li>Facilitated collaborative discussions and streamlined shared processes to enable efficient workflow.</li>
-        <li>Provided voice and non-voice support in reviewing appeals and due processes to uphold provider and customer rights and ensure access to care.</li>
+        <li>Performed insurance verification, discussed payment status, and supported claims processing.</li>
+        <li>Facilitated collaborative discussions and streamlined workflows.</li>
+        <li>Provided voice and non-voice support in reviewing appeals and due processes.</li>
       </ul>
-
+    </div>
+    <div class="job">
       <h3>On-the-Job Training (OJT) - Data Entry and Infographics</h3>
-      <p><strong>Philippine Statistics Authority, Province of Guimaras</strong> | 2021–2022</p>
+      <p><strong>Philippine Statistics Authority, Guimaras</strong> | 2021–2022</p>
       <ul>
         <li>Performed data entry on marriage, birth, and death statistics.</li>
-        <li>Created digital infographics to ensure accurate reporting of statistical data.</li>
+        <li>Created digital infographics for accurate reporting of statistical data.</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>Guimaras State University</strong> – Bachelor of Science in Information Technology (2018–2022)</p>
-      <p><strong>Iloilo State University of Fisheries Science and Technology</strong> – Master in Information Technology (Present)</p>
-    </section>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Guimaras State University</strong> – BS in Information Technology (2018–2022)</p>
+    <p><strong>Iloilo State University of Fisheries Science and Technology</strong> – Master in Information Technology (Present)</p>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Technical Skills:</strong> Data entry, basic troubleshooting, Microsoft Word, Excel, Publisher</li>
-        <li><strong>Creative Skills:</strong> Photography, Photoshop photo editing, infographic design</li>
-        <li><strong>Soft Skills:</strong> Adaptability, problem-solving, teamwork, time management, attention to detail</li>
-        <li><strong>Adaptability & Learning Agility:</strong> Quickly learning new tools, adjusting to change, applying feedback</li>
-        <li><strong>Communication and Collaboration</strong></li>
-      </ul>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Data entry, troubleshooting, Microsoft Word/Excel/Publisher</li>
+      <li>Photography, Photoshop editing, infographic design</li>
+      <li>Adaptability, problem-solving, teamwork, time management</li>
+      <li>Learning agility, communication, collaboration</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: esmaelgamilong06@gmail.com</p>
-      <p>Phone: 0935-252-4247</p>
-      <p>Location: Iloilo City</p>
-    </section>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: esmaelgamilong06@gmail.com</p>
+    <p>Phone: 0935-252-4247</p>
+    <p>Location: Iloilo City</p>
+    <a href="mailto:esmaelgamilong06@gmail.com" class="btn">Send Message</a>
+  </section>
 </body>
 </html>
