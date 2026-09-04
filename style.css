@@ -1,15 +1,22 @@
+/* Color Palette
+Light Green: #99cc66
+Dark Green: #254222
+Light Yellow: #ece2b1
+Mint Green: #cae4c5
+*/
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  background: #ffffff;
-  color: #333;
+  background: #cae4c5; /* mint green background */
+  color: #254222; /* dark green text */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  background: #2c3e50;
+  background: #254222; /* dark green */
   color: #fff;
 }
 
@@ -20,16 +27,18 @@ body {
 }
 
 .navbar a {
-  color: #fff;
+  color: #ece2b1; /* light yellow links */
   text-decoration: none;
+  font-weight: bold;
 }
 
 .btn {
-  background: #34495e;
-  color: #fff;
+  background: #99cc66; /* light green button */
+  color: #254222;
   padding: 8px 15px;
   border-radius: 4px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .hero {
@@ -37,37 +46,51 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 50px;
-}
-
-.hero-text {
-  max-width: 500px;
+  background: #ece2b1; /* light yellow hero section */
 }
 
 .hero-text h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color: #254222;
+}
+
+.hero-text h3 {
+  color: #254222;
 }
 
 .hero-text .highlight {
   font-size: 1.2em;
   font-style: italic;
   margin: 20px 0;
-  color: #2c3e50;
+  color: #254222;
 }
 
 .hero-image img {
   width: 250px;
   border-radius: 50%;
+  border: 5px solid #99cc66; /* light green border */
 }
 
 section {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
+  background: #fff;
+  border-left: 5px solid #99cc66; /* accent border */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px solid #254222;
   padding-bottom: 5px;
   margin-bottom: 20px;
+  color: #254222;
+}
+
+ul li {
+  background: #cae4c5; /* mint green list items */
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
 }
