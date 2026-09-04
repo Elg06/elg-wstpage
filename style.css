@@ -111,7 +111,7 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1); /* ✅ subtle transparent background */
+  background: llinear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)); /* ✅ subtle transparent background */
   border-radius: 10px;
 }
 
@@ -126,6 +126,6 @@ ul li {
   margin: 5px 0;
   padding: 8px;
   color: #fff; /* white text */
-  background:linear-gradient(to right, rgba(0, 0, 0, 0.3); /* ✅ 60% darker fading black */
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)); /* ✅ 60% darker fading black */
   border-radius: 4px;
 }
