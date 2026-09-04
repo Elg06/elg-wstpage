@@ -2,8 +2,8 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  background: linear-gradient(to right, #BDCCCF, #034C36, #003332);
-  color: #003332; /* deep teal text for readability */
+  background: linear-gradient(to right, #034C36, #BDCCCF);
+  color: #fff; /* ✅ default text white */
 }
 
 /* Navbar */
@@ -16,24 +16,24 @@ body {
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
-  flex-wrap: wrap; /* ✅ allows wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
   font-weight: bold;
   font-size: 1.5em;
-  color: #BDCCCF; /* light sage accent */
+  color: #fff; /* ✅ logo white */
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* ✅ responsive wrapping */
+  flex-wrap: wrap;
 }
 
 .navbar a {
-  color: #BDCCCF; /* light sage links */
+  color: #fff; /* ✅ links white */
   text-decoration: none;
   font-weight: bold;
 }
@@ -46,7 +46,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
-  flex-shrink: 0; /* ✅ keeps button size consistent */
+  flex-shrink: 0;
 }
 
 .btn:hover {
@@ -60,23 +60,23 @@ body {
   justify-content: space-around;
   padding: 80px 50px;
   color: #fff;
-  flex-wrap: wrap; /* ✅ responsive stacking */
+  flex-wrap: wrap;
 }
 
 .hero-text {
-  max-width: 500px; /* ✅ keeps text aligned with button */
+  max-width: 500px;
 }
 
 .hero-text h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: #BDCCCF; /* light sage for name */
+  color: #fff; /* ✅ name white */
 }
 
 .hero-text h3 {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: #BDCCCF;
+  color: #fff; /* ✅ tagline white */
 }
 
 /* Career Objective + Button Row */
@@ -84,27 +84,25 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  flex-wrap: wrap; /* ✅ wraps on small screens */
-  max-width: 500px; /* ✅ contained width */
+  flex-wrap: wrap;
+  max-width: 500px;
   margin: 20px 0;
 }
 
 .highlight {
-  background: rgba(189, 204, 207, 0.2); /* soft sage mist overlay */
-  padding: 15px 20px;
-  border-left: 5px solid #034C36; /* forest green accent */
-  border-radius: 5px;
+  padding: 0; /* ✅ remove rectangle padding */
+  border: none; /* ✅ remove border */
   font-size: 1.05em;
   font-style: italic;
-  color: #fff;
-  flex: 1; /* ✅ text takes available space */
+  color: #fff; /* ✅ pure white text */
+  flex: 1;
 }
 
 /* Hero Image */
 .hero-image img {
   width: 250px;
   border-radius: 50%;
-  border: 5px solid #BDCCCF; /* sage border */
+  border: 5px solid #fff; /* ✅ white border */
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
@@ -113,49 +111,20 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.05); /* ✅ subtle transparent background */
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #034C36; /* forest green underline */
+  border-bottom: 2px solid #fff; /* ✅ white underline */
   padding-bottom: 5px;
   margin-bottom: 20px;
-  color: #034C36;
+  color: #fff; /* ✅ headings white */
 }
 
 ul li {
   margin: 5px 0;
   padding: 8px;
-  background: #BDCCCF; /* sage mist list items */
-  border-radius: 4px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column; /* ✅ stack text and image */
-    text-align: center;
-  }
-  .hero-text {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .btn {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-  .hero-image img {
-    max-width: 150px;
-  }
+  color: #fff; /* ✅ list text white */
+  background: none; /* ✅ remove rectangle background */
 }
