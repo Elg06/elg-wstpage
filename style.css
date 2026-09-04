@@ -5,7 +5,6 @@ body {
   background: #C7DDB5;
   color: #fff;
 }
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -18,26 +17,22 @@ body {
   top: 0;
   flex-wrap: wrap;
 }
-
 .navbar .logo {
   font-weight: bold;
   font-size: 1.5em;
   color: #fff;
 }
-
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
-
 .btn {
   color: #fff;
   padding: 8px 15px;
@@ -45,22 +40,19 @@ body {
   font-weight: bold;
   transition: background 0.3s;
 }
-
 .btn:hover {
   background: #003332;
 }
-
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 80px 50px;
+  padding: 40px 50px;      /* was 80px 50px */
   color: #fff;
   flex-wrap: wrap;
-  min-height: 100vh;
+  /* min-height: 100vh removed — this was causing the extra space below "Read More" */
 }
-
 /* Circle Overlay */
 .circle-overlay {
   width: 350px;
@@ -73,33 +65,28 @@ body {
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
   padding: 20px;
 }
-
 .hero-text {
   text-align: center;
   max-width: 280px;
   position: relative;
   z-index: 2;
 }
-
 .hero-text h1 {
   font-size: 1.8em;
   margin-bottom: 10px;
   color: #fff;
 }
-
 .hero-text h3 {
   font-size: 1.1em;
   margin-bottom: 15px;
   color: #BDCCCF; /* ✅ sage accent */
 }
-
 .hero-text p {
   font-size: 0.95em;
   line-height: 1.4;
   margin-bottom: 20px;
   color: #fff;
 }
-
 /* Hero Image */
 .hero-image img {
   width: 250px;
@@ -107,7 +94,6 @@ body {
   border: 5px solid #fff;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-
 /* Sections */
 section {
   max-width: 900px;
@@ -116,14 +102,12 @@ section {
   background: rgba(0, 0, 0,0.05);
   border-radius: 10px;
 }
-
 h2 {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
   margin-bottom: 20px;
   color: #fff;
 }
-
 ul li {
   margin: 5px 0;
   padding: 8px;
