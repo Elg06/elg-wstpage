@@ -94,7 +94,7 @@ body {
   border: none; /* ✅ remove border */
   font-size: 1.05em;
   font-style: italic;
-  color: #fff; /* ✅ pure white text */
+  color: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)); /* ✅ pure white text */
   flex: 1;
 }
 
@@ -126,6 +126,6 @@ ul li {
   margin: 5px 0;
   padding: 8px;
   color: #fff; /* white text */
-  background:linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)); /* ✅ 60% darker fading black */
+  background: rgba(0, 0, 0, 0.4)); /* ✅ 60% darker fading black */
   border-radius: 4px;
 }
