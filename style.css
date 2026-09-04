@@ -1,22 +1,26 @@
-/* Color Palette
-Light Green: #99cc66
-Dark Green: #254222
-Light Yellow: #ece2b1
-Mint Green: #cae4c5
-*/
-
+/* Gradient Background */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  background: #cae4c5; /* mint green background */
-  color: #254222; /* dark green text */
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb, #d4a1f9); /* light blue → light purple */
+  color: #333;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
-  background: #254222; /* dark green */
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -27,70 +31,75 @@ body {
 }
 
 .navbar a {
-  color: #ece2b1; /* light yellow links */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .btn {
-  background: #99cc66; /* light green button */
-  color: #254222;
+  background: #4a90e2; /* blue accent */
+  color: #fff;
   padding: 8px 15px;
-  border-radius: 4px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
+.btn:hover {
+  background: #6c5ce7; /* purple hover */
+}
+
+/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 50px;
-  background: #ece2b1; /* light yellow hero section */
+  padding: 80px 50px;
+  color: #fff;
 }
 
 .hero-text h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 10px;
-  color: #254222;
 }
 
 .hero-text h3 {
-  color: #254222;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 .hero-text .highlight {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-style: italic;
   margin: 20px 0;
-  color: #254222;
 }
 
 .hero-image img {
   width: 250px;
   border-radius: 50%;
-  border: 5px solid #99cc66; /* light green border */
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
+/* Sections */
 section {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
-  border-left: 5px solid #99cc66; /* accent border */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #254222;
+  border-bottom: 2px solid #4a90e2;
   padding-bottom: 5px;
   margin-bottom: 20px;
-  color: #254222;
+  color: #4a90e2;
 }
 
 ul li {
-  background: #cae4c5; /* mint green list items */
   margin: 5px 0;
   padding: 8px;
-  border-radius: 4px;
 }
