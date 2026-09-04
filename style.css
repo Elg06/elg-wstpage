@@ -1,86 +1,120 @@
+/* Gradient Background */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #C7DDB5;
+  color: #fff;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 51, 50, 0.8);
+  backdrop-filter: blur(11px);
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn {
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #003332;
+}
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;   /* changed from space-around so the two sides sit at opposite edges */
   gap: 40px;
-  padding: 60px 50px;
-  color: #003332;
+  padding: 40px 50px;
+  color: #fff;
   flex-wrap: wrap;
 }
-
-/* Vertical social icons on the left */
+/* Social icons on the far left */
 .hero-socials {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 1.3em;
+  order: 0;
 }
 .hero-socials a {
   color: #003332;
   text-decoration: none;
 }
-
-/* Text block */
-.hero-text {
-  max-width: 550px;
-  flex: 1;
+/* Circle Overlay (unchanged) */
+.circle-overlay {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  padding: 20px;
+  order: 1;
 }
-.hero-text .greeting {
-  font-weight: bold;
-  border-bottom: 2px solid #003332;
-  display: inline-block;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
+.hero-text {
+  text-align: center;
+  max-width: 280px;
+  position: relative;
+  z-index: 2;
 }
 .hero-text h1 {
-  font-size: 2.8em;
-  margin: 10px 0;
-  color: #003332;
-  line-height: 1.2;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #fff;
 }
 .hero-text h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 15px;
-  color: #4d6b63;
+  color: #BDCCCF;
 }
 .hero-text p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 25px;
-  color: #333;
-}
-.btn-readmore {
-  display: inline-block;
-  background: #003332;
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin-bottom: 20px;
   color: #fff;
-  padding: 12px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
 }
-.btn-readmore:hover {
-  background: #00524f;
+/* Hero Image - now same size as the circle-overlay (350px) */
+.hero-image {
+  order: 2;
 }
-
-/* Image on the right, same size as reference (~250-300px) */
 .hero-image img {
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-
-/* Responsive stacking on smaller screens */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-socials {
-    flex-direction: row;
-    margin-bottom: 20px;
-  }
-}
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0,
