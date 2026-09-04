@@ -126,6 +126,6 @@ ul li {
   margin: 5px 0;
   padding: 8px;
   color: #fff; /* white text */
-  background:linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)); /* ✅ 60% darker fading black */
+  background:linear-gradient(to right, rgba(0, 0, 0, 0.3); /* ✅ 60% darker fading black */
   border-radius: 4px;
 }
