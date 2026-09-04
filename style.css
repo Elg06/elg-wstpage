@@ -127,18 +127,19 @@ body {
   background: #00524f;
 }
 
-/* Hero Image - same size as the circle overlay */
+/* Hero Image - transparent cutout style (no circle, no border) */
 .hero-image {
   order: 2;
   flex-shrink: 0;
+  align-self: flex-end;
 }
 .hero-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 420px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
 /* Sections */
@@ -172,5 +173,11 @@ ul li {
   .hero-socials {
     flex-direction: row;
     order: -1;
+  }
+  .hero-image {
+    align-self: center;
+  }
+  .hero-image img {
+    width: 280px;
   }
 }
