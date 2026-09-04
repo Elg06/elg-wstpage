@@ -13,7 +13,7 @@ body {
   align-items: center;
   padding: 15px 30px;
   background: rgba(0, 51, 50, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(11px);
   position: sticky;
   top: 0;
   flex-wrap: wrap;
@@ -39,10 +39,8 @@ body {
 }
 
 .btn {
-  background: #034C36;
   color: #fff;
   padding: 8px 15px;
-  border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
@@ -115,7 +113,7 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(0, 0, 0,0.05);
   border-radius: 10px;
 }
 
