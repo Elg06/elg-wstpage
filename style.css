@@ -43,33 +43,59 @@ body {
 .btn:hover {
   background: #003332;
 }
+
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px 50px;      /* was 80px 50px */
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 50px;
   color: #fff;
   flex-wrap: wrap;
-  /* min-height: 100vh removed — this was causing the extra space below "Read More" */
 }
-/* Circle Overlay */
+
+/* Social icons column (far left) */
+.hero-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.4em;
+  order: 0;
+}
+.hero-socials a {
+  color: #003332;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.hero-socials a:hover {
+  color: #001f1e;
+}
+
+/* Circle Overlay (unchanged design) */
 .circle-overlay {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.6); /* ✅ subtle faded black overlay */
+  background: rgba(0,0,0,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
   padding: 20px;
+  order: 1;
+  flex-shrink: 0;
 }
 .hero-text {
   text-align: center;
   max-width: 280px;
   position: relative;
   z-index: 2;
+}
+.hero-text .greeting {
+  font-size: 0.95em;
+  margin-bottom: 5px;
+  color: #fff;
 }
 .hero-text h1 {
   font-size: 1.8em;
@@ -79,7 +105,7 @@ body {
 .hero-text h3 {
   font-size: 1.1em;
   margin-bottom: 15px;
-  color: #BDCCCF; /* ✅ sage accent */
+  color: #BDCCCF;
 }
 .hero-text p {
   font-size: 0.95em;
@@ -87,13 +113,34 @@ body {
   margin-bottom: 20px;
   color: #fff;
 }
-/* Hero Image */
+.btn-readmore {
+  display: inline-block;
+  background: #003332;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-readmore:hover {
+  background: #00524f;
+}
+
+/* Hero Image - same size as the circle overlay */
+.hero-image {
+  order: 2;
+  flex-shrink: 0;
+}
 .hero-image img {
-  width: 250px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
+
 /* Sections */
 section {
   max-width: 900px;
@@ -112,6 +159,18 @@ ul li {
   margin: 5px 0;
   padding: 8px;
   color: #fff;
-  background: rgba(0,0,0,0.6); /* ✅ subtle faded black strip */
+  background: rgba(0,0,0,0.6);
   border-radius: 4px;
+}
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-socials {
+    flex-direction: row;
+    order: -1;
+  }
 }
