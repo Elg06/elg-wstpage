@@ -1,117 +1,86 @@
-/* Gradient Background */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  background: #C7DDB5;
-  color: #fff;
-}
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: rgba(0, 51, 50, 0.8);
-  backdrop-filter: blur(11px);
-  position: sticky;
-  top: 0;
-  flex-wrap: wrap;
-}
-.navbar .logo {
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #fff;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-.btn {
-  color: #fff;
-  padding: 8px 15px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.btn:hover {
-  background: #003332;
-}
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px 50px;      /* was 80px 50px */
-  color: #fff;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 50px;
+  color: #003332;
   flex-wrap: wrap;
-  /* min-height: 100vh removed — this was causing the extra space below "Read More" */
 }
-/* Circle Overlay */
-.circle-overlay {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: rgba(0,0,0,0.6); /* ✅ subtle faded black overlay */
+
+/* Vertical social icons on the left */
+.hero-socials {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 25px rgba(0,0,0,0.4);
-  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.3em;
 }
+.hero-socials a {
+  color: #003332;
+  text-decoration: none;
+}
+
+/* Text block */
 .hero-text {
-  text-align: center;
-  max-width: 280px;
-  position: relative;
-  z-index: 2;
+  max-width: 550px;
+  flex: 1;
+}
+.hero-text .greeting {
+  font-weight: bold;
+  border-bottom: 2px solid #003332;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
 }
 .hero-text h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #fff;
+  font-size: 2.8em;
+  margin: 10px 0;
+  color: #003332;
+  line-height: 1.2;
 }
 .hero-text h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 15px;
-  color: #BDCCCF; /* ✅ sage accent */
+  color: #4d6b63;
 }
 .hero-text p {
-  font-size: 0.95em;
-  line-height: 1.4;
-  margin-bottom: 20px;
-  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #333;
 }
-/* Hero Image */
+.btn-readmore {
+  display: inline-block;
+  background: #003332;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-readmore:hover {
+  background: #00524f;
+}
+
+/* Image on the right, same size as reference (~250-300px) */
 .hero-image img {
-  width: 250px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
-/* Sections */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: rgba(0, 0, 0,0.05);
-  border-radius: 10px;
-}
-h2 {
-  border-bottom: 2px solid #fff;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-ul li {
-  margin: 5px 0;
-  padding: 8px;
-  color: #fff;
-  background: rgba(0,0,0,0.6); /* ✅ subtle faded black strip */
-  border-radius: 4px;
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-socials {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
 }
