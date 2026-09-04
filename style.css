@@ -47,36 +47,23 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;   /* changed from space-around so the two sides sit at opposite edges */
-  gap: 40px;
-  padding: 40px 50px;
+  justify-content: space-around;
+  padding: 40px 50px;      /* was 80px 50px */
   color: #fff;
   flex-wrap: wrap;
+  /* min-height: 100vh removed — this was causing the extra space below "Read More" */
 }
-/* Social icons on the far left */
-.hero-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 1.3em;
-  order: 0;
-}
-.hero-socials a {
-  color: #003332;
-  text-decoration: none;
-}
-/* Circle Overlay (unchanged) */
+/* Circle Overlay */
 .circle-overlay {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6); /* ✅ subtle faded black overlay */
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
   padding: 20px;
-  order: 1;
 }
 .hero-text {
   text-align: center;
@@ -92,7 +79,7 @@ body {
 .hero-text h3 {
   font-size: 1.1em;
   margin-bottom: 15px;
-  color: #BDCCCF;
+  color: #BDCCCF; /* ✅ sage accent */
 }
 .hero-text p {
   font-size: 0.95em;
@@ -100,14 +87,9 @@ body {
   margin-bottom: 20px;
   color: #fff;
 }
-/* Hero Image - now same size as the circle-overlay (350px) */
-.hero-image {
-  order: 2;
-}
+/* Hero Image */
 .hero-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
+  width: 250px;
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -117,4 +99,19 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(0,
+  background: rgba(0, 0, 0,0.05);
+  border-radius: 10px;
+}
+h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+ul li {
+  margin: 5px 0;
+  padding: 8px;
+  color: #fff;
+  background: rgba(0,0,0,0.6); /* ✅ subtle faded black strip */
+  border-radius: 4px;
+}
